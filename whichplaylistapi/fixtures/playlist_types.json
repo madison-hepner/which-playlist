@@ -1,27 +1,27 @@
 [
     {
-        "model": "whichplaylistapi.playlisttype",
+        "model": "whichplaylistapi.playlist_type",
         "pk": 1,
         "fields": {
             "label": "Chill"
         }
     },
     {
-        "model": "whichplaylistapi.playlisttype",
+        "model": "whichplaylistapi.playlist_type",
         "pk": 2,
         "fields": {
             "label": "Rap"
         }
     },
     {
-        "model": "whichplaylistapi.playlisttype",
+        "model": "whichplaylistapi.playlist_type",
         "pk": 3,
         "fields": {
             "label": "Alternative"
         }
     },
     {
-        "model": "whichplaylistapi.playlisttype",
+        "model": "whichplaylistapi.playlist_type",
         "pk": 4,
         "fields": {
             "label": "Rock"

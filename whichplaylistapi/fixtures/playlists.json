@@ -1,0 +1,22 @@
+[
+    {
+        "model": "whichplaylistapi.playlistitem",
+        "pk": 1,
+        "fields": {
+            "playlist_name": "What Now?",
+            "description": "for when I need calm",
+            "playlist_vibes": "Chill",
+            "length": "2"
+        }
+    },
+    {
+        "model": "whichplaylistapi.playlistitem",
+        "pk": 2,
+        "fields": {
+            "playlist_name": "What Here?",
+            "description": "for when I need cry",
+            "playlist_vibes": "Sad",
+            "length": "3"
+        }
+    }
+]
