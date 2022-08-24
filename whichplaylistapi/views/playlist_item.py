@@ -10,11 +10,22 @@ class PlayListView(ViewSet):
     """play lists view"""
 
     def retrieve(self, request, pk):
+        """Handle GET requests for single game type
+
+            Returns:
+            Response -- JSON serialized game type
+        """
         playlist = PlayListItem.objects.get(pk=pk)
         serializer = PlayListSerializer(playlist)
         return Response(serializer.data)
 
     def list(self, request):
+        """Handle GET requests to get all game types
+
+        Returns:
+            Response -- JSON serialized list of game types
+        """
+
         playlist = PlayListItem.objects.all()
         serializer = PlayListSerializer(playlist, many=True)
         return Response(serializer.data)
