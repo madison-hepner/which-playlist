@@ -53,6 +53,11 @@ class PlayListView(ViewSet):
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+    def destroy(self, request, pk):
+        playlist = PlayListItem.objects.get(pk=pk)
+        playlist.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+
 
 class PlayListSerializer(serializers.ModelSerializer):
     class Meta:
